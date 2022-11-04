@@ -11,13 +11,11 @@ This patch add a new omnidirectional camera model in Blender, allowing it to ren
 
 Follow the instructions on the [Blender Wiki](http://wiki.blender.org/index.php/Dev:Doc/Building_Blender/Linux/Ubuntu/CMake) to compile Blender.
 
-Before compiling, apply the patch ("0001-Add-omnidirectional-camera-model-to-Cycles-rendering.patch") to the source code.
-If you have any conflicts, checkout the commit "c1506454ecb4630119ed7ce13b3f8cdfef6dcee0") and apply the patch again.
-
-Tip: if you don't need OpenCollada nor OSL, you can skip them in the external deps building step:
-
-        install_deps.sh --skip-osl --skip-opencollada
-
+2022-11-04: Adapt to the latest blender source code. Simply type
+```shell
+git apply 0001-Add-omnidirectional-camera-model-to-Cycles-rendering.patch
+```
+to apply this patch
 
 # Using the Omnidirectional camera model
 
